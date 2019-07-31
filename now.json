@@ -3,8 +3,8 @@
     "builds": [{
         "src": "index.js", "use": "@now/node"
     }],
-    "env": [
-        "POSTGRES_DEV_URL": <elephantsql development url goes here>,
-        "POSTGRES_PROD_URL": <elephantsql production url goes here>
-    ]
+    "env": {
+        "POSTGRES_DEV_URL": "<YOUR ELEPHANTSQL DEV URL HERE>",
+        "POSTGRES_PROD_URL": "<YOUR ELEPHANTSQL PRODUCTION URL HERE>"
+    }
 }
