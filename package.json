@@ -5,13 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "now-build": "NODE_ENV=production knex migrate:rollback knex migrate:latest && knex seed:run"
   },
   "keywords": [],
   "author": "Matt Hardman",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "knex": "^0.19.1",
+    "pg": "^7.12.0",
+    "sqlite3": "^4.0.9"
   }
 }
